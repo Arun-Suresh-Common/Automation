@@ -1,0 +1,13 @@
+ int x=14, y, flg=1;
+            for (y = 2; y <= x / 2; y++) {
+                if (x % y == 0) {
+                    flg = 0;
+                    break;
+                }
+            }
+
+            if (flg == 1)
+                System.out.print("prime: "+ x + " ");
+            else 
+            System.out.print("Not prime: "+ x + " ");
+            
