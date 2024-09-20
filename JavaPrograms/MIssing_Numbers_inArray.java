@@ -26,5 +26,20 @@ public class MIssing_Numbers_inArray {
 
 		}
 
+
+		//Print missing and available numbers
+
+//		for(int i=arr[0];i<arr[n-1]+1;i++){
+		    
+// 		    if(arr[cnt]==0){
+		    
+// 		    cnt++;
+		  
+// 		}
+// 		else{
+// 		  System.out.print(i+" ");
+// 		}
+
+		
 	}
 }
