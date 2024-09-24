@@ -5,32 +5,34 @@ import java.util.HashSet;
 public class Missing_Char_in_String {
 	public static void main(String[] args) {
 
-		//Missing char in String Simple program
+	
+//Missing char in String Simple program
+
 
 		String s = "em";
-		String sm = "abcdefghijklmnopqrstuvwxyz".replaceAll("["+s+"]","");
+		String smi = "abcdefghijklmnopqrstuvwxyz".replaceAll("["+s+"]","");
 
 		//Lower and upper
 		//String s = "emAF";
 		//String sm = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".replaceAll("["+s+"]","");
 		
-		System.out.println(sm);
+		System.out.println(smi);
 		
 		//************************************
 
 		//Another way of program
-		String s = "emAJY";
+		String st = "emAJY";
 		
 		String p,p1;
 		List<Character> li = new ArrayList<>();
 			List<Character> li2 = new ArrayList<>();
-		for(int i=0;i<s.length();i++){
-		    if(!Character.isUpperCase(s.charAt(i))){
-                li.add(s.charAt(i));
+		for(int i=0;i<st.length();i++){
+		    if(!Character.isUpperCase(st.charAt(i))){
+                li.add(st.charAt(i));
 		    }
 		    
 		  else {
-		      li2.add(s.charAt(i));
+		      li2.add(st.charAt(i));
 		  }
 
 		}
@@ -86,6 +88,5 @@ public class Missing_Char_in_String {
 			System.out.println(missingChars1);
 
 		}
-
 	}
 }
