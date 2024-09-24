@@ -5,6 +5,13 @@ import java.util.HashSet;
 public class Missing_Char_in_String {
 	public static void main(String[] args) {
 
+		//Missing char in String Simple program
+
+		String s = "em";
+		String sm = "abcdefghijklmnopqrstuvwxyz".replaceAll("["+s+"]","");
+		System.out.println(sm);
+		
+		//************************************
 		String str = "AZab";
 		HashSet<Character> presentChars = new HashSet<>();
 
