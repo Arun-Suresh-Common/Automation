@@ -9,9 +9,46 @@ public class Missing_Char_in_String {
 
 		String s = "em";
 		String sm = "abcdefghijklmnopqrstuvwxyz".replaceAll("["+s+"]","");
+
+		//Lower and upper
+		//String s = "emAF";
+		//String sm = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".replaceAll("["+s+"]","");
+		
 		System.out.println(sm);
 		
 		//************************************
+
+		//Another way of program
+		String s = "emAJY";
+		
+		String p,p1;
+		List<Character> li = new ArrayList<>();
+			List<Character> li2 = new ArrayList<>();
+		for(int i=0;i<s.length();i++){
+		    if(!Character.isUpperCase(s.charAt(i))){
+                li.add(s.charAt(i));
+		    }
+		    
+		  else {
+		      li2.add(s.charAt(i));
+		  }
+
+		}
+		
+		p = li.toString();
+		String sb = p.replaceAll("[,]","");
+
+		String sm = "abcdefghijklmnopqrstuvwxyz".replaceAll("["+ sb +"]","");
+		System.out.println("lower "+sm);
+		
+
+		p1 = li2.toString();
+		String sb1 = p1.replaceAll("[,]","");
+
+		String sm1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".replaceAll("["+ sb1 +"]","");
+		System.out.println("upper "+sm1);
+
+	 //************************************
 		String str = "AZab";
 		HashSet<Character> presentChars = new HashSet<>();
 
