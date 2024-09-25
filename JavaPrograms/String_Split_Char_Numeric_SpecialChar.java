@@ -3,9 +3,7 @@ package programs;
 public class String_Split_Char_Numeric_SpecialChar {
 	public static void main(String[] args) {
 
-	        //Without using inbuilt function
-//Without using inbuilt function
-	
+        //Without using inbuilt function
         String str = "Java11000!@#456ABC";
         StringBuilder alphabets = new StringBuilder();
         StringBuilder numbers = new StringBuilder();
