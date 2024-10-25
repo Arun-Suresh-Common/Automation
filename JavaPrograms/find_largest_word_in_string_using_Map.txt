@@ -1,0 +1,18 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String s="my name is suresh";
+        HashMap<String,Integer> map=new HashMap<>();
+        String split[]=s.split(" ");
+        for(String val:split)
+        {
+             map.put(val,val.length());
+        }
+        List<Map.Entry<String,Integer>> li=new ArrayList<>(map.entrySet());
+        li.sort(Map.Entry.comparingByValue());
+        System.out.println(li.get(li.size()-1));
+    }
+}
