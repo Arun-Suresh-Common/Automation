@@ -25,12 +25,15 @@ public class HashMap_Char_Count_occurence {
 		
 		System.out.println(" ************************** ");
 
-	//duplicate only print need to add in above for loop
+	//duplicate and unique print need to add in above for loop
 
 	for(Map.Entry<Character,Integer> m:hm.entrySet()){
         if(m.getValue()>1){
         System.out.println(m.getKey());
-    }}
+    }else{
+        System.out.println(m.getKey());
+    }
+}
 
 		
 	//word repeated occurence
