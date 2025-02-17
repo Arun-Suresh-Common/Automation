@@ -10,12 +10,12 @@ public class HashMap_Char_Count_occurence {
 		char[] ch = s.toCharArray();
 
 		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
-		int count = 0;
+		
 		for (char c : ch) {
 			if (hm.containsKey(c)) {
 				hm.put(c, hm.get(c) + 1);
 			} else {
-				hm.put(c, count + 1);
+				hm.put(c, 1);
 			}
 		}
 
@@ -24,6 +24,15 @@ public class HashMap_Char_Count_occurence {
 		}
 		
 		System.out.println(" ************************** ");
+
+	//duplicate only print need to add in above for loop
+
+	for(Map.Entry<Character,Integer> m:hm.entrySet()){
+        if(m.getValue()>1){
+        System.out.println(m.getKey());
+    }}
+
+		
 	//word repeated occurence
 		
 		String s2 = "bc a Sak ket tt a bc";
